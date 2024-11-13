@@ -11,9 +11,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                NavigationLink("Color picker example", destination: ColorPickerExample())
+                NavigationLink("Color picker", destination: ColorPickerExample())
 
-                NavigationLink("Animations example", destination: SwiftUIAnimations())
+                NavigationLink("Animations", destination: SwiftUIAnimations())
+                
+                NavigationLink("Menu", destination: MenuExample())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
