@@ -12,6 +12,8 @@ struct ContentView: View {
         NavigationView {
             Form {
                 NavigationLink("Color picker example", destination: ColorPickerExample())
+
+                NavigationLink("Animations example", destination: SwiftUIAnimations())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
