@@ -8,7 +8,6 @@ import SwiftUI
 
 /// Reference https://jeffverkoeyen.com/blog/2024/08/16/SwiftUI-Menu-subtitle-shenanigans/
 struct MenuExample: View {
-    @State var color: Color = .yellow
     var body: some View {
         VStack(spacing: 30) {
             Menu {

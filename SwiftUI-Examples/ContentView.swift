@@ -14,8 +14,10 @@ struct ContentView: View {
                 NavigationLink("Color picker", destination: ColorPickerExample())
 
                 NavigationLink("Animations", destination: SwiftUIAnimations())
-                
+
                 NavigationLink("Menu", destination: MenuExample())
+
+                NavigationLink("Animation with Transition", destination: AnimationWithTransition())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
