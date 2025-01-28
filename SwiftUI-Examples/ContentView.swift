@@ -22,8 +22,10 @@ struct ContentView: View {
                 NavigationLink("Snow Effect", destination: SnowView())
 
                 NavigationLink("Adjustable view", destination: AdjustableView())
-                
+
                 NavigationLink("Sensitive view", destination: SensitiveView())
+
+                NavigationLink("Buttons view", destination: ButtonsView())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
