@@ -26,6 +26,8 @@ struct ContentView: View {
                 NavigationLink("Sensitive view", destination: SensitiveView())
 
                 NavigationLink("Buttons view", destination: ButtonsView())
+
+                NavigationLink("Dynamic Property Example", destination: DynamicPropertyExample())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
