@@ -9,15 +9,24 @@ import SwiftUI
 
 struct AdjustableView: View {
     var body: some View {
-        VStack(spacing: 20) {
-            SettingsButton()
-                .border(.blue, width: 2)
-            SettingsButton()
-                .frame(width: 100)
-                .border(.blue, width: 2)
-            SettingsButton()
-                .frame(width: 50)
-                .border(.blue, width: 2)
+        VStack {
+            VStack(spacing: 20) {
+                SettingsButton()
+                    .border(.blue, width: 2)
+                SettingsButton()
+                    .frame(width: 100)
+                    .border(.blue, width: 2)
+                SettingsButton()
+                    .frame(width: 50)
+                    .border(.blue, width: 2)
+            }
+            .padding()
+
+            Divider()
+
+            Text("Use GeometryReader to fill the space left")
+                .font(.headline)
+            ResponsiveCircleView()
         }
         .font(.system(size: 18))
         .navigationTitle("Adjustable view example")
