@@ -7,16 +7,28 @@
 import SwiftUI
 
 struct ColorMixerView: View {
-    @State private var fraction = 0.5
+    @State private var fraction = 0.05
+    @State private var startColor = Color.blue
+    @State private var mixedColor = Color.red
 
     var body: some View {
-        Color.blue.mix(with: .red, by: fraction, in: .device)
-            .overlay(alignment: .bottom) {
-                Slider(value: $fraction, in: 0 ... 1)
-            }
-            .animation(.easeInOut, value: fraction)
-            .frame(height: 400)
-            .padding()
+
+        VStack {
+            ColorPicker("Start Color", selection: $startColor)
+                .font(.headline)
+                .padding()
+            ColorPicker("Mixed Color", selection: $mixedColor)
+                .font(.headline)
+                .padding()
+
+            Slider(value: $fraction, in: 0 ... 1)
+
+            startColor.mix(with: mixedColor, by: fraction, in: .device)
+                .animation(.easeInOut, value: fraction)
+                .frame(height: 300)
+            Spacer()
+        }
+        .padding()
     }
 }
 
