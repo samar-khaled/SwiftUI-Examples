@@ -29,6 +29,8 @@ struct ButtonsView: View {
 
             Divider()
 
+            LinearGradientButton()
+
             Spacer()
         }
     }
