@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ResponsiveCircleView: View {
+    @Environment(\.colorScheme) var colorSchema
     var body: some View {
         GeometryReader { geometry in
             Circle()
@@ -15,7 +16,7 @@ struct ResponsiveCircleView: View {
                 .frame(width: geometry.size.width * 0.5, height: geometry.size.width * 0.5)
                 .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
         }
-        .background(Color.gray.opacity(0.2)) // Background to see the bounds
+        .background(Color.gray.opacity(colorSchema == .light ? 0.2 : 0.8)) // Background to see the bounds
     }
 }
 
