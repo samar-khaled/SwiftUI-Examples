@@ -28,8 +28,10 @@ struct ContentView: View {
                 NavigationLink("Buttons view", destination: ButtonsView())
 
                 NavigationLink("Dynamic Property Example", destination: DynamicPropertyExample())
-                
+
                 NavigationLink("Mix Color feature", destination: ColorMixerView())
+
+                NavigationLink("Different TextFields", destination: TextFieldsView())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
