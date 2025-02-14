@@ -12,6 +12,8 @@ import SwiftUI
 struct TextFieldsView: View {
     @State var firstName = ""
     @State var password = ""
+
+    @State var text = ""
     var body: some View {
         Form {
             Section("First Name different") {
@@ -40,7 +42,26 @@ struct TextFieldsView: View {
                     .textInputAutocapitalization(.never)
                     .keyboardType(.twitter)
                     .onSubmit {
-                        
+                    }
+            }
+
+            Section("Text editor") {
+                TextEditor(text: $text)
+                    .toolbar {
+                        ToolbarItemGroup(placement: .keyboard) {
+
+                            Button(action: {}) {
+                                Image(systemName: "plus.circle")
+                            }
+                            Spacer()
+                            Button(action: {}) {
+                                Image(systemName: "photo.badge.plus")
+                            }
+
+                            Button(action: {}) {
+                                Image(systemName: "folder.badge.plus")
+                            }
+                        }
                     }
             }
         }
