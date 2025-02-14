@@ -32,6 +32,8 @@ struct ContentView: View {
                 NavigationLink("Mix Color feature", destination: ColorMixerView())
 
                 NavigationLink("Different TextFields", destination: TextFieldsView())
+
+                NavigationLink("Tapped Text", destination: TappedText())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
