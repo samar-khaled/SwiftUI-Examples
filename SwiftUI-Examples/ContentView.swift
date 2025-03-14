@@ -36,6 +36,8 @@ struct ContentView: View {
                 NavigationLink("Tapped Text", destination: TappedText())
 
                 NavigationLink("Gestures Tap Example", destination: GesturesTapExample())
+
+                NavigationLink("Color View List", destination: ColorViewList())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
