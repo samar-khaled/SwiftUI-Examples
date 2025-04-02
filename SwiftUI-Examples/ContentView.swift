@@ -38,8 +38,10 @@ struct ContentView: View {
                 NavigationLink("Gestures Tap Example", destination: GesturesTapExample())
 
                 NavigationLink("Color View List", destination: ColorViewList())
-                
+
                 NavigationLink("Table View", destination: ProjectTableView())
+
+                NavigationLink("Stretching Header View", destination: StretchingHeaderView())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
