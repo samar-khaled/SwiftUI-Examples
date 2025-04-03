@@ -1,5 +1,5 @@
 //
-//  ColorViewList.swift
+//  CardViewList.swift
 //  SwiftUI-Examples
 //
 //  Created by Samar Khaled on 14/03/2025.
@@ -7,7 +7,7 @@
 import SwiftUI
 
 /// https://www.createwithswift.com/symmetrical-and-asymmetrical-transitions-in-swiftui-with-the-scroll-transition-modifier
-struct ColorViewList: View {
+struct CardViewList: View {
 
     var body: some View {
         // The scrolling container
@@ -69,5 +69,5 @@ struct ColorView: View {
 }
 
 #Preview {
-    ColorViewList()
+    CardViewList()
 }

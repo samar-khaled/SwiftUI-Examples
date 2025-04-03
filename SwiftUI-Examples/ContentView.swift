@@ -8,43 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.horizontalSizeClass) var horizontalSize
     var body: some View {
-        NavigationView {
-            Form {
-                NavigationLink("Color picker", destination: ColorPickerExample())
-
-                NavigationLink("Animations", destination: SwiftUIAnimations())
-
-                NavigationLink("Menu", destination: MenuExample())
-
-                NavigationLink("Animation with Transition", destination: AnimationWithTransition())
-
-                NavigationLink("Snow Effect", destination: SnowView())
-
-                NavigationLink("Adjustable view", destination: AdjustableView())
-
-                NavigationLink("Sensitive view", destination: SensitiveView())
-
-                NavigationLink("Buttons view", destination: ButtonsView())
-
-                NavigationLink("Dynamic Property Example", destination: DynamicPropertyExample())
-
-                NavigationLink("Mix Color feature", destination: ColorMixerView())
-
-                NavigationLink("Different TextFields", destination: TextFieldsView())
-
-                NavigationLink("Tapped Text", destination: TappedText())
-
-                NavigationLink("Gestures Tap Example", destination: GesturesTapExample())
-
-                NavigationLink("Color View List", destination: ColorViewList())
-
-                NavigationLink("Table View", destination: ProjectTableView())
-
-                NavigationLink("Stretching Header View", destination: StretchingHeaderView())
+        TabView {
+            Tab("Main", systemImage: "house") {
+                ViewExamplesTab()
             }
-            .navigationBarTitle("SwiftUI examples", displayMode: .inline)
+
+            Tab("Animation Views", systemImage: "swift") {
+                AnimationTab()
+            }
         }
+        .tabViewStyle(.sidebarAdaptable)
         .background(Color("ColorBackground").edgesIgnoringSafeArea(.all))
     }
 }
