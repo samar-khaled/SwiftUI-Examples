@@ -18,6 +18,10 @@ struct ContentView: View {
             Tab("Animation Views", systemImage: "swift") {
                 AnimationTab()
             }
+
+            Tab("UIKit Views", systemImage: "moon") {
+                UIKitViewsTab()
+            }
         }
         .tabViewStyle(.sidebarAdaptable)
         .background(Color("ColorBackground").edgesIgnoringSafeArea(.all))
