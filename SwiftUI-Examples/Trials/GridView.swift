@@ -1,5 +1,5 @@
 //
-//  UsingGeometryGroup.swift
+//  GridView.swift
 //  SwiftUI-Examples
 //
 //  Created by Samar Khaled on 14/03/2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DynamicGridTest1: View {
+struct DynamicGridTest: View {
     var body: some View {
         GeometryReader { proxy in
             let count = Int(proxy.size.width / 50)
@@ -41,7 +41,7 @@ struct GridView: View {
             }
             ZStack(alignment: .bottomTrailing) {
                 Color.green.frame(width: 300, height: 300)
-                DynamicGridTest1()
+                DynamicGridTest()
 //                    .geometryGroup()
                     .transformEffect(.identity)
                     .frame(width: size.width, height: size.height)
