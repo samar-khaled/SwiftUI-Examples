@@ -34,8 +34,10 @@ struct ViewExamplesTab: View {
                 NavigationLink("Table View", destination: ProjectTableView())
 
                 NavigationLink("Stretching Header View", destination: StretchingHeaderView())
-                
+
                 NavigationLink("Stretchy Image", destination: StretchyImage())
+
+                NavigationLink("Using OnGeometryChange", destination: UsingOnGeometryChange())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
