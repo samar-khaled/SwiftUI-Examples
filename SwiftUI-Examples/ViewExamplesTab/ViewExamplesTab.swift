@@ -38,6 +38,8 @@ struct ViewExamplesTab: View {
                 NavigationLink("Stretchy Image", destination: StretchyImage())
 
                 NavigationLink("Using OnGeometryChange", destination: UsingOnGeometryChange())
+
+                NavigationLink("Using redacted for loading Views", destination: LoadingView())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
