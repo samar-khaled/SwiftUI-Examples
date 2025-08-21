@@ -13,6 +13,7 @@ struct LoadingView: View {
         VStack(spacing: 20) {
             Text("Check is loading")
             Text("Still Checking")
+                .unredacted()
         }
         .font(.largeTitle)
         .padding()
