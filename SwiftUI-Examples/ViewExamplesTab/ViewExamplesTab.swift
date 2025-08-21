@@ -40,6 +40,8 @@ struct ViewExamplesTab: View {
                 NavigationLink("Using OnGeometryChange", destination: UsingOnGeometryChange())
 
                 NavigationLink("Using redacted for loading Views", destination: LoadingView())
+
+                NavigationLink("List SectionActions", destination: ListWithSectionActions())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
