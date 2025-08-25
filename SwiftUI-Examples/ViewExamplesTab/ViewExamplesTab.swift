@@ -42,6 +42,8 @@ struct ViewExamplesTab: View {
                 NavigationLink("Using redacted for loading Views", destination: LoadingView())
 
                 NavigationLink("List SectionActions", destination: ListWithSectionActions())
+
+                NavigationLink("Using ContentTransition", destination: UsingContentTransition())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
