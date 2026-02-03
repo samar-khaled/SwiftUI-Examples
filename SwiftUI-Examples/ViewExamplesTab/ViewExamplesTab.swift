@@ -46,6 +46,10 @@ struct ViewExamplesTab: View {
                 NavigationLink("Using ContentTransition", destination: UsingContentTransition())
 
                 NavigationLink("Using ContainerRelativeFrame", destination: ViewContainerRelativeFrame())
+
+                NavigationLink("ScrollSections", destination: ScrollSections())
+
+                NavigationLink("Counter", destination: Counter())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
