@@ -50,6 +50,8 @@ struct ViewExamplesTab: View {
                 NavigationLink("ScrollSections", destination: ScrollSections())
 
                 NavigationLink("Counter", destination: Counter())
+
+                NavigationLink("Focus state example", destination: LoginView())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
