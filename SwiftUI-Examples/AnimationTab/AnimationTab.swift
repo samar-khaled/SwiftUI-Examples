@@ -18,6 +18,8 @@ struct AnimationTab: View {
                 NavigationLink("Snow Effect", destination: SnowView())
 
                 NavigationLink("Card View List", destination: CardViewList())
+
+                NavigationLink("ExpandingAnimationsView", destination: ExpandingAnimationsView())
             }
             .navigationBarTitle("Animation examples", displayMode: .inline)
         }
