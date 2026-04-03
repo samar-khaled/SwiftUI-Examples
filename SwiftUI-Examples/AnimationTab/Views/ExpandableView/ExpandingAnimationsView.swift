@@ -22,10 +22,36 @@ struct ExpandingAnimationsView: View {
 
             AnimatableExpandableView()
                 .listRowSeparator(.hidden)
+            
+            WorkingExpandableView()
+                .listRowSeparator(.hidden)
             Text("End of test")
                 .listRowSeparator(.hidden)
         }
         .listStyle(.plain)
+    }
+}
+
+struct WorkingExpandableView: View {
+    @State private var isExpanded = false
+
+    var body: some View {
+        ExpandableBaseView(
+            animatableData: isExpanded ? 1 : 0,
+            header: {
+                TitleView()
+                    .onTapGesture {
+                        withAnimation() {
+                            isExpanded.toggle()
+                        }
+                    }
+            },
+            content: {
+                DetailView()
+            }
+        )
+        .background(Color.yellow)
+        .cornerRadius(8)
     }
 }
 
