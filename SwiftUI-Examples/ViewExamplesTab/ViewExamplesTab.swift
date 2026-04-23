@@ -54,6 +54,8 @@ struct ViewExamplesTab: View {
                 NavigationLink("Focus state example", destination: LoginView())
                 
                 NavigationLink("AsyncImage example", destination: AsyncImageView())
+                
+                NavigationLink("Details sheet view", destination: DetailsSheetView())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
