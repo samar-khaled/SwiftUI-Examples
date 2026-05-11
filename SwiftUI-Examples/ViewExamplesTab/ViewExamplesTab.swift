@@ -52,10 +52,12 @@ struct ViewExamplesTab: View {
                 NavigationLink("Counter", destination: Counter())
 
                 NavigationLink("Focus state example", destination: LoginView())
-                
+
                 NavigationLink("AsyncImage example", destination: AsyncImageView())
-                
+
                 NavigationLink("Details sheet view", destination: DetailsSheetView())
+
+                NavigationLink("Formatting Values View", destination: FormattingValuesView())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
