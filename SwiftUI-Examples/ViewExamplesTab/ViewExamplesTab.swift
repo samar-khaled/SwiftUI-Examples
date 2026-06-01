@@ -58,6 +58,8 @@ struct ViewExamplesTab: View {
                 NavigationLink("Details sheet view", destination: DetailsSheetView())
 
                 NavigationLink("Formatting Values View", destination: FormattingValuesView())
+                
+                NavigationLink("Size to fit sheet example", destination: OpenSizeToFitSheetView())
             }
             .navigationBarTitle("SwiftUI examples", displayMode: .inline)
         }
