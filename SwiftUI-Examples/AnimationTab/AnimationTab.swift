@@ -20,6 +20,8 @@ struct AnimationTab: View {
                 NavigationLink("Card View List", destination: CardViewList())
 
                 NavigationLink("ExpandingAnimationsView", destination: ExpandingAnimationsView())
+
+                NavigationLink("Sensory Feedback Example", destination: SensoryFeedbackExample())
             }
             .navigationBarTitle("Animation examples", displayMode: .inline)
         }
