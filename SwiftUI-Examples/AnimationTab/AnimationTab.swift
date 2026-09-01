@@ -22,6 +22,10 @@ struct AnimationTab: View {
                 NavigationLink("ExpandingAnimationsView", destination: ExpandingAnimationsView())
 
                 NavigationLink("Sensory Feedback Example", destination: SensoryFeedbackExample())
+                
+                NavigationLink("Rectangle Animation View", destination: RectangleAnimationView())
+                
+                NavigationLink("Rectangle Color Animation View", destination: RectangleColorAnimationView())
             }
             .navigationBarTitle("Animation examples", displayMode: .inline)
         }
